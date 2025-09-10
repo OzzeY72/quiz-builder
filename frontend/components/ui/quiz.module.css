@@ -1,0 +1,40 @@
+.listItem {
+  border: 1px solid #e5e7eb; /* Tailwind border-gray-200 */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem; /* rounded */
+  transition: box-shadow 0.2s ease;
+}
+
+.listItem:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+  font-weight: 600;
+  color: #2563eb; /* text-blue-600 */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.questionCount {
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* text-gray-600 */
+}
+
+.deleteButton {
+  color: #ef4444; /* text-red-500 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.deleteButton:hover {
+  color: #b91c1c; /* text-red-700 */
+}

@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid #d1d5db; /* аналог border */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.5rem; /* rounded */
+}
+
+.title {
+  font-weight: 600; /* font-semibold */
+  margin: 0;
+}
+
+.section {
+  margin-top: 0.5rem; /* mt-2 */
+}
+
+.correct {
+  color: #16a34a; /* text-green-600 */
+  font-weight: bold;
+}
+
+.list {
+  list-style-type: disc; /* list-disc */
+  padding-left: 1.25rem; /* list-inside */
+  margin: 0;
+}

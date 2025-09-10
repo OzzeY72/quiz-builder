@@ -27,6 +27,7 @@ model Question {
   id        Int       @id @default(autoincrement())
   title     String
   type      String
+  correctAnswers       String[]      @default([])
   quiz      Quiz      @relation(fields: [quizId], references: [id])
   quizId    Int
   answers   Answer[]

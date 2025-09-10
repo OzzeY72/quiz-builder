@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateQuizDto } from './dto/create-quiz.dto';
+import { CreateQuizDto, QuestionType } from './dto/create-quiz.dto';
 import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
@@ -15,10 +15,11 @@ export class QuizzesService {
             const questionData: any = {
               title: q.title,
               type: q.type,
+              correctAnswers: q.correctAnswers || null,
             };
             
             // Adding answer only if type is multiple choice
-            if (q.type === 'MULTIPLE_CHOICE') {
+            if (q.type === QuestionType.multiple_choice) {
               questionData.answers = {
                 create: q.answers.map((a) => ({
                   title: a.title,
