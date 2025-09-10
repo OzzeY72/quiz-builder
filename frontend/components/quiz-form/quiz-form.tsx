@@ -6,7 +6,7 @@ import * as z from "zod";
 import { useEffect } from "react";
 import styles from "./quiz-form.module.css";
 import { Quiz, quizService } from "@/services/quizService";
-import Button from "./ui/button";
+import Button from "../ui/button/button";
 
 // Zod scheme
 const answerSchema = z.object({

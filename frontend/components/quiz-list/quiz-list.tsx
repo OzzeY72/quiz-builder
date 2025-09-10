@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Quiz, quizService } from "@/services/quizService";
-import Button from "./ui/button";
-import QuizComponent from "./ui/quiz";
+import Button from "../ui/button/button";
+import QuizComponent from "../ui/quiz/quiz";
 
 import styles from './quiz-list.module.css';
 

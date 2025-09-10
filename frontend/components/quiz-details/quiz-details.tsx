@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { quizService, Quiz } from "@/services/quizService";
-import Question from "./ui/question";
+import Question from "../ui/question/question";
 import styles from './quiz-details.module.css';
 
 export default function QuizDetail({ id }: {id: string}) {
