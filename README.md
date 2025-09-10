@@ -35,10 +35,18 @@ DATABASE_URL="postgresql://user:password@localhost:5432/db?schema=public"
 
 Replace user, password, db with your PostgreSQL credentials and database name.
 
+In the frontend folder, create a `.env` file with the following content (your backend link):
+
+```bash
+NEXT_PUBLIC_BASE_URL=http://localhost:3001
+```
+
 ### 4. Run the backend
 
 ```bash
 cd backend
+npm run prisma:migrate
+npm run prisma:generate
 npm run start:dev
 ```
 
@@ -48,3 +56,5 @@ npm run start:dev
 cd frontend
 npm run dev
 ```
+
+[Database scheme](./Database.md)
